@@ -1,7 +1,7 @@
 using CatalogService as service from '../../srv/interaction_srv';
 
 annotate service.Interactions_Header with @Aggregation.ApplySupported: {
-    Transformations: [ 'filter' ], // Le decimos a Fiori que solo use filtros estándar, no "groupby"
+    Transformations: [ 'filter' ], // solo filtros estándar, no "groupby"
     Rollup: #None
 };
 annotate service.Interactions_Header with @(
